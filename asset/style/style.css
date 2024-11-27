@@ -9,6 +9,7 @@
     --brun : #C0A48F;
     --brunF : #765E51;
     --violet : #5D3A66;
+    --blanc : #ffffff;
 }
 
 body
@@ -41,7 +42,7 @@ header
 nav .nav-link
 {
     padding: 30px;
-    color: var(--grisF);
+    color: var(--blanc);
     font-size: 1.5em;
 }
 /* END Header */
