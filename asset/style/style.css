@@ -25,6 +25,7 @@ p
 .BodoniFont
 {
     font-family: "Bodoni Moda", serif;
+    color: var(--grisF);
 }
 
 #logo
@@ -66,10 +67,18 @@ main .home
     background-position: center;
     position: relative;
 }
+/* END HomeSection */
 
+/* MainSection */
+main .mainContent
+{
+    height: 1900px;
+}
+/* END MainSection */
+
+/* Footer */
 #mapid 
 {
     height: 300px;
     border-radius: 10px;
 }
-/* END HomeSection */
