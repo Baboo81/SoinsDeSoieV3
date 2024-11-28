@@ -1,7 +1,19 @@
 "use strict";
 
-//Logo animation:
+//NavBar:
+    //Sticky navBar:
+$(window).scroll(function(){
 
+    let scroll = $(this).scrollTop();
+
+    if (scroll > 100){
+        $("nav").addClass('sticky');
+    }else{
+        $("nav").removeClass('sticky');
+    } 
+});
+
+    //Logo animation:
 const logo = document.getElementById('logo');
 
 let leftPos = 0;
@@ -13,7 +25,7 @@ logo.style.position = "absolute";
 
 function ballAnimate1 () {
 
-    if (leftPos == 1200) {
+    if (leftPos == 2100) {
         dir = 1
     } else if 
         (leftPos == -100) {
@@ -41,10 +53,4 @@ const map = L.map('mapid').setView(centroid, 16.4);
 //Add tiles & marker:
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 L.marker([50.709925, 4.352603]).addTo(map);
-
-function openLink (event) {
-    const link = "https://booking.optios.net/19311";
-    window.open(link, "https://soinsdesoie.be", "_self");
-    event.preventDefault();
-}
 ///////////////////////// END //////////////////////////

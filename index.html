@@ -73,8 +73,8 @@
                 <div class="overlay">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
-                                <img src="./asset/img/svg/Logo.svg" alt="Logo intitulé Soins de Soie">
+                            <div class="col-md-12 text-center">
+                                <img src="./asset/img/svg/Logo.svg" alt="Logo intitulé Soins de Soie" class="homeTitle">
                             </div>
                         </div>
                     </div>
@@ -84,47 +84,51 @@
                 <div class="container">
                     <div class="row">
                         <h1 class="text-center text-muted p-5 my-5 fs-1">L'Institut de Beauté Soins De Soie</h1>
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade my-5">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./asset/img/slider/Img1.JPG" class="d-block w-100" alt="Photo de l'Institut, table de soins">
+                        <div class="col-md-12 slider">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
+                                <div class="carousel-inner" id="carousel-image">
+                                    <div class="carousel-item  active">
+                                        <img src="./asset/img/slider/Img1.JPG" class="d-block w-100" alt="Photo de l'Institut, table de soins">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./asset/img/slider/Img2.JPG" class="d-block w-100" alt="Photo de Marie votre ethéticienne">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./asset/img/slider/Img3.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, comptoir">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./asset/img/slider/Img4.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, meuble présentoir">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./asset/img/slider/Img5.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, matériel de pédicure">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./asset/img/slider/Img6.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, produits Sothys">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./asset/img/slider/Img7.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, produits Bernard Cassiere">
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="./asset/img/slider/Img2.JPG" class="d-block w-100" alt="Photo de Marie votre ethéticienne">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./asset/img/slider/Img3.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, comptoir">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./asset/img/slider/Img4.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, meuble présentoir">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./asset/img/slider/Img5.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, matériel de pédicure">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./asset/img/slider/Img6.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, produits Sothys">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./asset/img/slider/Img7.JPG" class="d-block w-100" alt="Photo de l'Institut de beauté, produits Bernard Cassiere">
-                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
                     </div>
                     <div class="row">
-                        <p class="fs-3 BodoniFont p-5 my-5">
-                            Soins de Soie est un institut de beauté au féminin situé au lieu-dit L'Ermite, à Braine l'Alleud.<br /> 
-                            Ce joli salon propose un espace amical dans lequel vous vous sentirez comme à la maison. Sa décoration chaleureuse et ses teintes boisées apportent une atmosphère cosy idéale pour un pur moment de détente.<br />
-                            Vous serez accueillies par Marie, véritable experte de l'esthétique qui vous écoute attentivement et vous conseille sur le soin idéale.<br />
-                            Vous êtes au parfait endroit pour magnifier vos mains et vos pieds ou pour une épilation en douceur. Le salon propose également des soins de beauté et de bien-être adaptés à chacun de vos besoins : Soins du visage Bernard Cassière, beauté du regard ou encore soins visages dernières technologies anti-imperfections !
-                        </p>
+                        <div class="col-md-12">
+                            <p class="fs-3 BodoniFont p-5 my-5">
+                                Soins de Soie est un institut de beauté au féminin situé au lieu-dit L'Ermite, à Braine l'Alleud.<br /> 
+                                Ce joli salon propose un espace amical dans lequel vous vous sentirez comme à la maison. Sa décoration chaleureuse et ses teintes boisées apportent une atmosphère cosy idéale pour un pur moment de détente.<br />
+                                Vous serez accueillies par Marie, véritable experte de l'esthétique qui vous écoute attentivement et vous conseille sur le soin idéale.<br />
+                                Vous êtes au parfait endroit pour magnifier vos mains et vos pieds ou pour une épilation en douceur. Le salon propose également des soins de beauté et de bien-être adaptés à chacun de vos besoins : Soins du visage Bernard Cassière, beauté du regard ou encore soins visages dernières technologies anti-imperfections !
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

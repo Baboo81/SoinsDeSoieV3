@@ -46,6 +46,12 @@ nav .nav-link
     color: var(--blanc);
     font-size: 1.5em;
 }
+.sticky
+{
+    background: #000;
+    opacity: 50%;
+    height: 150px;
+}
 /* END Header */
 
 .overlay
@@ -67,6 +73,12 @@ main .home
     background-position: center;
     position: relative;
 }
+
+.homeTitle
+{
+    height: 110rem;
+    
+}
 /* END HomeSection */
 
 /* MainSection */
@@ -74,6 +86,7 @@ main .mainContent
 {
     height: 1900px;
 }
+
 /* END MainSection */
 
 /* Footer */
