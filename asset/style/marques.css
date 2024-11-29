@@ -1,0 +1,14 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+
+
+:root 
+{
+    --grisF : #A09E9D;
+    --gris : #C7C2BF;
+    --beige : #E3D1BD;
+    --brun : #C0A48F;
+    --brunF : #765E51;
+    --violet : #5D3A66;
+    --blanc : #ffffff;
+}
