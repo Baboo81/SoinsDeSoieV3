@@ -46,6 +46,12 @@ nav .nav-link
     color: var(--blanc);
     font-size: 1.5em;
 }
+
+nav .nav-link:hover
+{
+    color: var(--beige);
+}
+
 .sticky
 {
     background: #000;
@@ -89,4 +95,10 @@ main .mainContent
 {
     height: 300px;
     border-radius: 10px;
+}
+
+footer .icons
+{
+    height: 5rem;
+    width: 5rem;
 }
