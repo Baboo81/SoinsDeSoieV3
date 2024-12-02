@@ -12,3 +12,116 @@
     --violet : #5D3A66;
     --blanc : #ffffff;
 }
+
+body
+{
+   overflow-x: hidden;
+}
+
+p
+{
+    line-height: 2rem;
+}
+
+.BodoniFont
+{
+    font-family: "Bodoni Moda", serif;
+    color: var(--grisF);
+}
+
+.CaveatFont
+{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#logo
+{
+    height: 15rem;
+    width: 15rem;
+}
+
+/* Header */
+header
+{
+    width: 100%;
+}
+
+nav .nav-link
+{
+    padding: 30px;
+    color: var(--blanc);
+    font-size: 1.5em;
+}
+
+nav .nav-link:hover
+{
+    color: var(--beige);
+}
+
+.sticky
+{
+    background: #000;
+    opacity: 50%;
+    height: 150px;
+}
+/* END Header */
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+}
+
+/* HomeSection */
+main .home
+{
+    height: 1200px;
+    background-image: url(/asset/img/pageSoins/AloeVera2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .homeContent
+{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+/* END HomeSection */
+
+/* MainSection */
+main .mainContent
+{
+    height: 1900px;
+}
+
+.mainTitle
+{
+    color: var(--brunF);
+    font-size: 4rem;
+    
+}
+
+/* END MainSection */
+
+/* Footer */
+#mapid 
+{
+    height: 300px;
+    border-radius: 10px;
+}
+
+footer .icons
+{
+    height: 5rem;
+    width: 5rem;
+}
