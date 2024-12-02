@@ -108,7 +108,21 @@ main .mainContent
 {
     color: var(--brunF);
     font-size: 4rem;
-    
+    font-family: "caveat";
+}
+
+.bodoniViolet
+{
+    color: var(--violet);
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+
+.bodoniVioletTitle
+{
+    color: var(--violet);
+    font-size: 2em;
+    font-weight: bold;
 }
 
 /* END MainSection */
