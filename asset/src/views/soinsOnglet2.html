@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Institut de soins esthétiques, se situant à Braine l'Alleud. Votre esthéticienne vous proposera une multitude de soins adaptés à votre peau dans un cadre cocooning, en utilisant les cosmetiques suivants : Bernard Cassière, Sothys, Mavex, Cirépil, Pronails. Marie, votre esthéticienne vous proposera un large choix de soins visage et corps ainsi que des massages.">
+        <meta name="keywords" content="Institut de soins esthétiques, cosmétiques; Sothys, Bernard Cassière, Cirépil, Mavex, Pronails">
+        <!-- Leaflet CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+        <!-- Library CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="./asset/style/libraries/bootstrap.css">-->
+        <!-- CSS -->
+        <link rel="stylesheet" href="/asset/style/reset.css">
+        <link rel="stylesheet" href="/asset/style/soins.css">
+        <!-- Library Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <!-- Library -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--<script src="./asset/script/libraries/bootstrap.js" defer></script>-->
+        <script src="/asset/script/libraries/jQuery.js" defer></script>
+        <!-- Script JS -->
+        <script src="/asset/script/main.js" defer></script>
+        <title>Les Soins</title>
+    </head>
+    <body>
+         <!-- Header -->
+         <header>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg fixed-top">
+                        <div class="container-fluid justify-content-center">
+                            <img src="/asset/img/svg/cachet.svg" alt="Logo du site représentant un double cercle dans lesquels se trouvent un pissenlit" id="logo">
+                            <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" aria-current="page" href="/index.html">Présentation</a>
+                                    </li>
+                                    <li class="nav-item dropdown mx-5">
+                                        <a class="nav-link dropdown-toggle" href="/asset/src/views/soins.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Soins</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/asset/src/views/soinsOnglet1.html">Soins du visage</a></li>
+                                            <li><a class="dropdown-item" href="/asset/src/views/soinsOnglet2.html">Soins du visage dernières technologies</a></li>
+                                            <li><a class="dropdown-item" href="#">Beauté du regard</a></li>
+                                            <li><a class="dropdown-item" href="#">Mains & Pieds</a></li>
+                                            <li><a class="dropdown-item" href="#">Épilations</a></li>
+                                            <li><a class="dropdown-item" href="#">Massages</a></li>
+                                          </ul>
+                                        </li>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="/asset/src/views/marques.html">Marques</a>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="/asset/src/views/tarifs.html">Tarifs</a>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="/asset/src/views/contact.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="/asset/src/views/réserver.html">Réserver</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="home">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 homeContent">
+                                <img src="/asset/img/pageSoins/SoinsTitle.svg" alt="Titre soins en blanc" class="homeTitle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mainContent">
+                <div class="container">
+                <h5 class="card-title text-center mx-5 my-5 mainTitle">Soins du visage dernières technologies</h5>
+                <!-- Section : Soins du visage dernières technologies -->
+                    <div class="row">
+                        <div class="card my-5 border-0 rounded-0">
+                            <h5 class="card-title text-start bodoniVioletTitle my-5">Microneedling 95.00€/séance (45')</h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="/asset/img/pageSoins/content/contentImg7.jpg" class="img-fluid rounded" alt="Image représentant un soin du visage" style="width: 90rem;">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card-body">
+                                        <p class="card-text bodoniViolet">Le Microneedling est une technique esthétique innovante qui utilise de minuscules aiguilles pour créer de micro-perforations dans la couche supérieure de la peau. Ce processus stimule la production naturelle de collagène et d'élastine, deux composants clés pour une peau ferme et jeune.</p>
+                                        <p class="card-text bodoniViolet mt-4">Ce traitement est particulièrement efficace pour atténuer les signes du vieillissement, comme les ridules et les rides, mais aussi pour améliorer l'apparence des cicatrices d'acné, des pores dilatés, et des taches pigmentaires. Le Microneedling est une alternative sûre et efficace aux procédures plus invasives, offrant des résultats impressionnants sans nécessiter une longue période de récupération.</p>
+                                        <p class="card-text bodoniViolet mt-4">En plus de rajeunir et de lisser la peau, le Microneedling améliore également l'absorption des produits de soin. Ainsi, les sérums et crèmes appliqués pendant ou après le traitement pénètrent plus profondément, maximisant leurs effets bénéfiques.</p>
+                                        <p class="card-text bodoniViolet mt-4">Optez pour le Microneedling pour une peau éclatante et rajeunie. Ce traitement assure une expérience confortable et des résultats visibles. Le Microneedling est adapté à tous les types de peau et peut être personnalisé selon vos besoins spécifiques.</p>
+                                        <p class="card-text bodoniBrown mt-4">Recommandations : 6 séances espacées de 4 à 6 semaines</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img src="/asset/img/pageSoins/pictos/microneedling.png" class="my-3" alt="Image représentant un soin du visage" style="width: 60rem;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html> 

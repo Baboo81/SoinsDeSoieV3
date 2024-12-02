@@ -118,6 +118,13 @@ main .mainContent
     line-height: 1.6em;
 }
 
+.bodoniBrown
+{
+    color: var(--brunF);
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
 .bodoniVioletTitle
 {
     color: var(--violet);
