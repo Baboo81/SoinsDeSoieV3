@@ -60,6 +60,17 @@ nav .nav-link:hover
     color: var(--beige);
 }
 
+nav .nav-item .dropdown-menu
+{
+    height: 20em;
+    width: 35em;
+}
+
+nav .dropdown-menu .dropdown-item
+{
+    font-size: 1.8em;
+}
+
 .sticky
 {
     background: #000;

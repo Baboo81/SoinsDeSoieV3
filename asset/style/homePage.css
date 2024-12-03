@@ -52,12 +52,23 @@ nav .nav-link
 {
     padding: 30px;
     color: var(--blanc);
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 nav .nav-link:hover
 {
     color: var(--beige);
+}
+
+nav .nav-item .dropdown-menu
+{
+    height: 20em;
+    width: 35em;
+}
+
+nav .dropdown-menu .dropdown-item
+{
+    font-size: 1.8em;
 }
 
 .sticky
