@@ -36,6 +36,11 @@ p
     font-style: normal;
 }
 
+.boldFont
+{
+    font-weight: bold;
+}
+
 #logo
 {
     height: 15rem;
@@ -105,6 +110,13 @@ main .home
     top: 35%;
     left: 20%;
     transform: translate(-50%, -50%);
+}
+
+.mainContent .price
+{
+    color: var(--violet);
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 /* END HomeSection */
