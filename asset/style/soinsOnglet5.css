@@ -152,12 +152,19 @@ main .home
     font-family: "caveat";
     font-size: 3.5em;
 }
+
+.mainContent .price
+{
+    color: var(--violet);
+    font-weight: bold;
+    font-size: 1.2em;
+}
 /* END HomeSection */
 
 /* MainSection */
 main .mainContent
 {
-    height: 13300px;
+    height: 2300px;
 }
 
 .mainTitle

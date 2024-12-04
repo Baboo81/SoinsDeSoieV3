@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Institut de soins esthétiques, se situant à Braine l'Alleud. Votre esthéticienne vous proposera une multitude de soins adaptés à votre peau dans un cadre cocooning, en utilisant les cosmetiques suivants : Bernard Cassière, Sothys, Mavex, Cirépil, Pronails. Marie, votre esthéticienne vous proposera un large choix de soins visage et corps ainsi que des massages.">
+        <meta name="keywords" content="Institut de soins esthétiques, cosmétiques; Sothys, Bernard Cassière, Cirépil, Mavex, Pronails">
+        <!-- Leaflet CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+        <!-- Library CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="./asset/style/libraries/bootstrap.css">-->
+        <!-- CSS -->
+        <link rel="stylesheet" href="/asset/style/reset.css">
+        <link rel="stylesheet" href="/asset/style/soinsOnglet5.css">
+        <!-- Library Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <!-- Library -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--<script src="./asset/script/libraries/bootstrap.js" defer></script>-->
+        <script src="/asset/script/libraries/jQuery.js" defer></script>
+        <!-- Script JS -->
+        <script src="/asset/script/main.js" defer></script>
+        <title>Épilations</title>
+    </head>
+    <body>
+         <!-- Header -->
+         <header>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg fixed-top">
+                        <div class="container-fluid justify-content-center">
+                            <img src="/asset/img/svg/cachet.svg" alt="Logo du site représentant un double cercle dans lesquels se trouvent un pissenlit" id="logo">
+                            <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" aria-current="page" href="/index.html">Présentation</a>
+                                    </li>
+                                    <li class="nav-item dropdown mx-5">
+                                        <a class="nav-link dropdown-toggle" href="/asset/src/views/soins.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Soins</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/asset/src/views/soinsOnglet1.html">Soins du visage</a></li>
+                                            <li><a class="dropdown-item" href="/asset/src/views/soinsOnglet2.html">Soins du visage dernières technologies</a></li>
+                                            <li><a class="dropdown-item" href="/asset/src/views/soinsOnglet3.html">Beauté du regard</a></li>
+                                            <li><a class="dropdown-item" href="/asset/src/views/soinsOnglet4.html">Mains & Pieds</a></li>
+                                            <li><a class="dropdown-item" href="/asset/src/views/soinsOnglet5.html">Épilations</a></li>
+                                            <li><a class="dropdown-item" href="/asset/src/views/soinsOnglet6.html">Massages</a></li>
+                                          </ul>
+                                        </li>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="/asset/src/views/marques.html">Marques</a>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="/asset/src/views/tarifs.html">Tarifs</a>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="/asset/src/views/contact.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="/asset/src/views/réserver.html">Réserver</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="home">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 homeContent">
+                                <img src="/asset/img/pageSoins/SoinsTitle.svg" alt="Titre soins en blanc" class="homeTitle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mainContent">
+                <div class="container text-center">
+                <h5 class="card-title text-center mx-5 my-5 mainTitle">Épilations</h5>
+                <!-- Section : Épilations -->
+                <div class="row">
+                    <div class="card my-5 border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-12"> 
+                                <div class="card-body text-start">
+                                    <p class="card-text bodoniViolet mt-4">La Cire Fiorella de Cirépil est une cire de dernière génération sans colophane, idéale pour les peaux sensibles 
+                                        Voici ses caractéristiques clés : 
+                                        </p>
+                                    <p class="card-text bodoniGrey mt-4"><span class="underLine">Formule hypoallergénique</span> : Sans colophane, elle est douce pour la peau.</p>
+                                    <p class="card-text bodoniGrey mt-4"><span class="underLine">Texture fluide</span> : Facile à appliquer en couches ultra-minces. </p>
+                                    <p class="card-text bodoniGrey mt-4"><span class="underLine">Parfum floral</span> : Aux notes de pivoine et de fleur d'amandier.</p>
+                                    <p class="card-text bodoniGrey mt-4"><span class="underLine">Couleur rose framboise</span> : Avec une apparence holographique.</p>
+                                    <p class="card-text bodoniGrey mt-4"><span class="underLine">Application en couches fines</span> : Pour un arrachage efficace et doux.</p>
+                                    <p class="card-text bodoniGrey mt-4"><span class="underLine">Zones d'épilation</span> : Idéale pour toutes les zones du corps et du visage, y compris les zones sensibles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Sourcils</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">13.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Restructuration des sourcils</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">27.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Lèvres</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">10.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Menton</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">10.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">1/2 jambes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">21.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Cuisses</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">24.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">3/4 jambes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">28.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Jambes complètes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">32.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">1/2 bras</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">16.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Bras</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">20.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Aisselles</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">14.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Bikini simple</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">17.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Bikini échancré</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">21.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Bikini brésilien</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">25.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Bikini intégral</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">29.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5">
+                    <div class="card border-0 rounded-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text text-start bodoniViolet">Sillon inter-fessier</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <p class="price">8.00€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center text-lg-start bg-dark text-light py-5">
+            <section class="">
+              <div class="container text-center text-md-start mt-5" id="containerFooter">
+                <div class="row mt-3">
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <p class="text-uppercase fw-bold mb-4">
+                      <i class="fas fa-gem me-3"></i>Adresse
+                    </p>
+                    <p>
+                        Avenue du Fief 12, 1420 Braine-l'Alleud, Belgique
+                    </p>
+                    <div id="mapid" class="container-fluid"></div>
+                  </div>
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <p class="text-uppercase fw-bold mb-4">
+                      Horaires
+                    </p>
+                    <div class="">
+                        <p>Lundi    09h00 - 19h00</p>
+                        <p>Mardi    09h00 - 19h00</p>
+                        <p>Mercredi 09h00 - 19h00</p>
+                        <p>Jeudi    09h00 - 19h00</p>
+                        <p>Vendredi 09h00 - 19h00</p>
+                        <p>Samedi   09h00 - 16h00</p>
+                        <p>Dimanche Fermé</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p class="text-uppercase fw-bold mb-4">
+                            Réseaux Sociaux
+                        </p>
+                        <div class="">
+                            <a href="https://www.facebook.com/soinsdesoie"><img class="icons p-3" src="./asset/img/svg/facebook.svg" alt="Icône FaceBook"></a>
+                            <a href="https://www.instagram.com/soins_de_soie_1420"><img class="icons p-3" src="./asset/img/svg/instagram.svg" alt="Icône Instagram"></a>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <p class="text-uppercase fw-bold mb-4">Coordonnées</p>
+                    <p>soinsdesoie1420@gmail.com</p>
+                    <p>0472/26.19.93</p>
+                    <p>RC  0691.859.626</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+                <div class="text-center fw-bolder">
+                    <p>&copy; Christel Rodriguez Perez - 2025</p>
+                </div>
+          </footer>
+    </body>
+</html> 
