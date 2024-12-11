@@ -140,16 +140,8 @@ main .home
 
 .home .homeTitle
 {
-    height: 100rem;
-    width: 100em;
-}
-
-.home .homeContent
-{
-    /*position: absolute;
-    top: 37%;
-    left: -50%;
-    transform: translate(-50%, -50%);*/
+    height: 30rem;
+    width: 30em;
 }
 
 .secondTitle

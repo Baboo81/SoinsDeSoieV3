@@ -148,14 +148,6 @@ main .home
     width: 30em;
 }
 
-.home .homeContent
-{
-    /*position: absolute;
-    top: 35%;
-    left: -50%;
-    transform: translate(-50%, -50%);*/
-}
-
 .secondTitle
 {
     color: var(--violet);

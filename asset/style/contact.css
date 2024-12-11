@@ -151,18 +151,10 @@ main .home
     position: relative;
 }
 
-.home .homeContent
-{
-    /*position: absolute;
-    top: 35%;
-    left: -50%;
-    transform: translate(-50%, -50%);*/
-}
-
 .home .homeTitle
 {
-    height: 120em;
-    width: 120em;
+    height: 30em;
+    width: 30em;
 }
 
 .secondTitle

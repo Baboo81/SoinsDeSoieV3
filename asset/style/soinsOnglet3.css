@@ -104,14 +104,6 @@ main .home
     position: relative;
 }
 
-.home .homeContent
-{
-    /*position: absolute;
-    top: 35%;
-    left: 20%;
-    transform: translate(-50%, -50%);*/
-}
-
 .home .homeTitle
 {
     height: 30em;
