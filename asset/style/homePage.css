@@ -68,6 +68,11 @@ nav .nav-item .dropdown-menu
     background-color: black;
 }
 
+nav .dropdown-menu .dropdown-item:hover
+{
+    color: var(--brunF);
+}
+
 nav .dropdown-menu .dropdown-item
 {
     font-size: 1.8em;
@@ -135,9 +140,10 @@ footer .icons
 /* Nav */
 @media only screen and (min-width : 992px) and (max-width : 1194px)
 {
-    nav .nav-link
+    nav .nav-item
     {
-        padding: 30px;
+       margin-left: -2% !important;
+       margin-right: 5% !important;
     }
 } 
 
