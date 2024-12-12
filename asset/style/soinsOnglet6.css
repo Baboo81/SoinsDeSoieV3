@@ -91,7 +91,7 @@ nav .nav-link
 {
     padding: 30px;
     color: var(--blanc);
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 nav .nav-link:hover
@@ -103,11 +103,14 @@ nav .nav-item .dropdown-menu
 {
     height: 20em;
     width: 35em;
+    border-radius: 15px;
+    background-color: black;
 }
 
 nav .dropdown-menu .dropdown-item
 {
     font-size: 1.8em;
+    color: var(--blanc);
 }
 
 .sticky
