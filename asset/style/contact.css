@@ -120,6 +120,13 @@ nav .nav-item .dropdown-menu
     background-color: black;
 }
 
+nav .dropdown-menu .dropdown-item:hover
+{
+    color: var(--brunF);
+}
+
+
+
 nav .dropdown-menu .dropdown-item
 {
     font-size: 1.8em;
