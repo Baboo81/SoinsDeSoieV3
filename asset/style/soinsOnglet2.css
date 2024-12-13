@@ -319,3 +319,29 @@ footer .icons
         height: 700px;
     }
 }
+
+/* mainTitle */
+@media only screen and (min-width : 500px) and (max-width : 767px)
+{
+    .mainContent .mainTitle
+    {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 499px)
+{
+    .mainContent .mainTitle
+    {
+        font-size: 2.7em;
+    }
+}
+
+/* mainContent */
+@media only screen and (min-width : 0px) and (max-width : 1199px)
+{
+    main .mainContent
+    {
+        height: 11000px;
+    }
+}
