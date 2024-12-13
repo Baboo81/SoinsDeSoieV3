@@ -306,3 +306,47 @@ footer .icons
         border-radius: 15px;
     }
 }
+
+/* home */
+@media only screen and (min-width : 800px) and (max-width : 991px)
+{
+    .home .homeTitle
+    {
+        height: 40em;
+        width: 40em;
+    }
+
+    main .home
+    {
+        height: 1000px;
+    }
+}
+
+@media only screen and (min-width : 500px) and (max-width : 799px)
+{
+    .home .homeTitle
+    {
+        height: 30em;
+        width: 30em;
+    }
+
+    main .home
+    {
+        height: 900px;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 499px)
+{
+    .home .homeTitle
+    {
+        height: 20em;
+        width: 20em;
+    }
+
+    main .home
+    {
+        height: 700px;
+    }
+}
+
