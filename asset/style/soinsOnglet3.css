@@ -288,6 +288,15 @@ footer .icons
     }
 }
 
+@media only screen and (min-width : 0px) and (max-width : 545px)
+{
+    nav .dropdown-menu
+    {
+        font-size: .8em;
+    }
+}
+
+
 /* home */
 @media only screen and (min-width : 800px) and (max-width : 991px)
 {
