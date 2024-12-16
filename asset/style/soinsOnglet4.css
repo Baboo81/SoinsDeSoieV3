@@ -353,19 +353,19 @@ footer .icons
 }
 
 /* mainContent */
-@media only screen and (min-width : 500px) and (max-width : 1399px)
+@media only screen and (min-width : 768px) and (max-width : 1400px)
 {
      main .mainContent
     {
-        height: 3500px;
+        height: 18500px;
     }
 }
 
-@media only screen and (min-width : 0px) and (max-width : 499px)
+@media only screen and (min-width : 0px) and (max-width : 767px)
 {
      main .mainContent
     {
-        height: 5500px;
+        height: 29000px;
     }
 }
 
@@ -381,6 +381,6 @@ footer .icons
 {
     .mainContent .mainTitle, .secondTitle
     {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 }
