@@ -158,6 +158,11 @@ nav .nav-item .dropdown-menu
     background-color: black;
 }
 
+nav .dropdown-toggle .show
+{
+    color: var(--beige) !important;
+}
+
 nav .dropdown-menu .dropdown-item:hover
 {
     color: var(--brunF);

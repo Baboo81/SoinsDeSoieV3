@@ -358,3 +358,28 @@ footer .icons
         height: 700px;
     }
 }
+
+/* mainContent */
+@media only screen and (min-width : 0px) and (max-width : 1399px)
+{
+    main .mainContent
+    {
+        height: 5000px;
+    }
+}
+
+@media only screen and (min-width : 500px) and (max-width : 991px)
+{
+    .mainContent .mainTitle
+    {
+        font-size: 2.7em;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 499px)
+{
+    .mainContent .mainTitle
+    {
+        font-size: 2em;
+    }
+}
