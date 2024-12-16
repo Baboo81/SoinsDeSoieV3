@@ -330,3 +330,12 @@ footer .icons
         height: 700px;
     }
 }
+
+/* mainContent */
+@media only screen and (min-width : 0px) and (max-width : 470px)
+{
+    main .mainContent
+    {
+        height: 3000px;
+    }
+}
