@@ -359,3 +359,16 @@ footer .icons
         height: 9000px;
     }
 }
+
+@media only screen and (min-width : 768px) and (max-width : 991px)
+{
+    .bodoniVioletTitle
+    {
+        font-size: 1.8em;
+    }
+
+    .bodoniViolet
+    {
+        font-size: 1.2em;
+    }
+}
