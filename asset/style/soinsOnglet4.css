@@ -1,6 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root 
 {
@@ -236,10 +236,19 @@ main .home
     position: relative;
 }
 
-.home .homeTitle
+.home .bigTitleContent
 {
-    height: 50em;
-    width: 50em;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.bigTitleContent .bigTitle
+{
+    color: var(--blanc);
+    font-family: "Roboto", serif;
+    font-size: 6em;
+    font-weight: 100;
 }
 
 .secondTitle
