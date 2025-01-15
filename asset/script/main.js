@@ -8,7 +8,7 @@ $(window).scroll(function(){
 
     if (scroll > 100){
         $("nav").addClass('sticky');
-    }else{
+    } else {
         $("nav").removeClass('sticky');
     } 
 });
