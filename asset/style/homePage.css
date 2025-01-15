@@ -23,6 +23,11 @@ p
     line-height: 2rem;
 }
 
+.spaceLine
+{
+    line-height: 1.3em;
+}
+
 .BodoniFont
 {
     font-family: "Bodoni Moda", serif;
