@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
 
 
 :root 
@@ -32,6 +32,11 @@ p
 {
     font-family: "Bodoni Moda", serif;
     color: var(--grisF);
+}
+
+.shadowsFont
+{
+    font-family: "Shadows Into Light", serif;
 }
 
 .CaveatFont
