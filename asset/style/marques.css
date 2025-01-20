@@ -289,6 +289,32 @@ main .mainContent
     font-family: "caveat";
 }
 
+.mainContent .container
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.container img 
+{
+    width: 800px;
+    height: 800px;
+    object-fit: contain;
+}
+
+.card-body img
+{
+    margin-bottom: 0px;
+}
+
+.card-text
+{
+    margin-top: 0px;
+}
+
 /* END MainSection */
 
 /* Footer */
